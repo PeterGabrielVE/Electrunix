@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Electrunix Shop</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+  <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+   <script src="assets/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/jquery.countdown.css" /> <!-- countdown -->
+  <!-- //js -->
+  <!-- web fonts -->
+  <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <!-- //web fonts -->
+  <!-- start-smooth-scrolling -->
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+  </script>
+
+
+</head>
+<body>
+  <app-root></app-root>
+
+  <script src="assets/js/minicart.js"></script>
+	<script>
+        elecls.render();
+
+        elecls.cart.on('elecsb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        		}
+        	}
+        });
+    </script>
+
+</body>
+</html>
